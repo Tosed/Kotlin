@@ -6,12 +6,10 @@ fun main() {
     println("Digite o segundo valor:")
     val number2: Float? = readLine()!!.toFloatOrNull()
 
-    println("Escolha uma operação:")
-    val operacao: String = readLine()!!.toString()
-
 
     if(number1 != null && number2 != null){
-        when(operacao){
+        println("Escolha uma operação: + (mais) , - (menos) , * (vezes) , / (dividir) ")
+        when(readLine()!!.toString()){
             "+" -> soma(number1,number2)
             "-" -> subtrair(number1,number2)
             "*" -> multiplicar(number1,number2)
