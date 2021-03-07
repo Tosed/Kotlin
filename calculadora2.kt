@@ -16,11 +16,11 @@ fun main() {
             "-" -> subtrair(number1,number2)
             "*" -> multiplicar(number1,number2)
             "/" -> dividir(number1,number2)
-            else -> println("Operação inválida")
+            else -> println("Operador inválida, tente novamente") 
         }
 
     }else {
-        println("Valores nulos")
+        println("OPS! Valores impossivel de calcular") 
     }
 
 
