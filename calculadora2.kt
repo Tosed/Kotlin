@@ -1,10 +1,10 @@
 fun main() {
 
     println("Digite o primeiro valor:")
-    val number1: Int? = readLine()!!.toIntOrNull()
+    val number1: Float? = readLine()!!.toFloatOrNull()
 
     println("Digite o segundo valor:")
-    val number2: Int? = readLine()!!.toIntOrNull()
+    val number2: Float? = readLine()!!.toFloatOrNull()
 
     println("Escolha uma operação:")
     val operacao: String = readLine()!!.toString()
@@ -16,35 +16,35 @@ fun main() {
             "-" -> subtrair(number1,number2)
             "*" -> multiplicar(number1,number2)
             "/" -> dividir(number1,number2)
-            else -> println("Operador inválida, tente novamente") 
+            else -> println("Operador inválida, tente novamente")
         }
 
     }else {
-        println("OPS! Valores impossivel de calcular") 
+        println("OPS! Valores impossivel de calcular")
     }
 
 
 }
 
-fun soma(a: Int, b: Int): Int {
+fun soma(a: Float, b: Float): Float {
     val calcular = a.plus(b)
     println("Resultado é: $calcular")
     return calcular
 }
 
-fun subtrair(a: Int, b: Int): Int {
+fun subtrair(a: Float, b: Float): Float {
     val calcular = a.minus(b)
     println("Resultado é: $calcular")
     return calcular
 }
 
-fun multiplicar(a: Int, b: Int): Int {
+fun multiplicar(a: Float, b: Float): Float {
     val calcular = a.times(b)
     println("Resultado é: $calcular")
     return calcular
 }
 
-fun dividir(a: Int, b: Int): Int {
+fun dividir(a: Float, b: Float): Float  {
     val calcular = a.div(b)
     println("Resultado é: $calcular")
     return calcular
